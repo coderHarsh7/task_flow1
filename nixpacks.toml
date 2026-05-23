@@ -1,11 +1,14 @@
 [phases.install]
 cmds = [
-  "npm install --prefix server --omit=dev",
+  "npm install --prefix server",
   "npm install --prefix client"
 ]
 
 [phases.build]
 cmds = ["npm run build --prefix client"]
+
+[phases.caching]
+disabled = true
 
 [start]
 cmd = "node server/index.js"
