@@ -1,6 +1,6 @@
 [phases.install]
 cmds = [
-  "npm install --prefix server",
+  "NPM_CONFIG_PRODUCTION=false npm install --prefix server",
   "npm install --prefix client"
 ]
 
